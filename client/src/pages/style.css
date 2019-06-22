@@ -5,3 +5,9 @@
 .container {
     width: 90%;
 }
+
+.signUpForm {
+    width: 50%;
+    margin: 0 auto;
+    
+}
