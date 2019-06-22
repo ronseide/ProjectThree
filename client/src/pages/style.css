@@ -8,6 +8,7 @@ body {
 .container {
     width: 90%;
 }
+<<<<<<< HEAD
 h2 {
     text-align: center;
 }
@@ -20,4 +21,11 @@ h5 {
     margin-right: auto;
     width: 700px;
     height: 100px;
+=======
+
+.signUpForm {
+    width: 50%;
+    margin: 0 auto;
+    
+>>>>>>> 7f80cf07db5e6c5b9b398011d198f59fa3e891a9
 }

@@ -3,7 +3,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 
-function Nav() {
+function Nav(props) {
   return (
     <div id="nav">
       <Link to="/">
@@ -21,6 +21,11 @@ function Nav() {
       <Link to="/signup" className="btn">
           Sign Up
       </Link>&nbsp;
+      <div> 
+        <button onClick={props.handleLoginModal}> Login </button>
+      </div>
+     
+      
  
 
 {/* <MDBNavbar color="indigo" dark expand="md">

@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import SignUp from "./pages/SignUp";
 import Footer from "./pages/Footer";
+import Login from "./pages/Login";
 
 
 
@@ -22,12 +23,21 @@ import Footer from "./pages/Footer";
 
 
 class App extends Component {
+  state = {
+    modal: false
+  }
+
+  handleLoginModal = () => {
+    this.setState({ modal: !this.state.modal });
+  }
 
   render() {
     return (
 <Router>
     <div>
-    <Nav />
+    <Nav 
+      handleLoginModal={this.handleLoginModal}
+    />
     <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/Resources" component={Resources}/>
@@ -36,8 +46,9 @@ class App extends Component {
     <Route exact path="/SignUp" component={SignUp}/>
   
     </Switch>
+
     <Footer />
-    
+    {this.state.modal ? <Login/> : null }
   </div>
   </Router>
     )
