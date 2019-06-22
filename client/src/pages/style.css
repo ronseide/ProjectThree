@@ -1,3 +1,6 @@
+body {
+    text-align: center;
+}
 #nav {
     text-align: right;
     color: blueviolet;
@@ -5,9 +8,24 @@
 .container {
     width: 90%;
 }
+<<<<<<< HEAD
+h2 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+#resourcesPhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 100px;
+=======
 
 .signUpForm {
     width: 50%;
     margin: 0 auto;
     
+>>>>>>> 7f80cf07db5e6c5b9b398011d198f59fa3e891a9
 }
