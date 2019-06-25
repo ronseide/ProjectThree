@@ -9,20 +9,63 @@ function Resources() {
                 <div class="row">
                 <div class="col-md-12">
                 <h2>What is Cryptocurrency?</h2><br></br>
-                <img src="./images/resourcesPhoto1.jpg" alt="Resources" id="resourcesPhoto"></img>
+                {/* <img src="./images/resourcesPhoto1.jpg" alt="Resources" id="resourcesPhoto"></img> */}
+                <br></br>
+                The world of crypto-currencies is an exciting place. Less than a decade old, crypto-currencies are a revolution in both how societies think about money and how savvy investors can reap profits. But this world is not without its dangers and the un-initiated can suffer untold losses. 
+                At Crypto-Currency Tracker, we don't just provide an easy means of tracking current and potential investments, we provide a range of links to informative articles that represent differing views on the market: a general overview, positive views and even more negative points of view.
+                <br></br><br></br> 
+                Click the links below to get started!
                 <br></br><br></br>
-                Lorem ipsum dolor sit amet, assum sensibus necessitatibus et vix, cum an quod sensibus. Prima oblique suscipit vis ea, utamur liberavisse consequuntur an mea. Menandri praesent suavitate ea vis, legendos deterruisset te mea. Et nostro maiorum cum. Electram interesset qui ex, rebum aliquam moderatius ne vim. Ignota signiferumque ad per.Sit ea minim semper, ludus tibique mea ex. Sed et voluptua accusamus, his tollit utinam consulatu et. Ex brute luptatum atomorum sea, ea tale erat oratio sed. Vel ei choro facilisis, vel te inani alienum deterruisset, mei fierent persequeris eu. An nam enim solet, at ius convenire dissentias.
+                <div class="divider">
+                        <hr class="left" /><img src="./images/lineGraph1.png" width="25px" height="25px"alt="Line Graph" id="lineGraph"></img>
+                        <hr class="right" />
+                        <br></br>
+                        <br></br>
+
+                    </div>
                 </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <h5>Column 1</h5>
+                    <i class="fas fa-balance-scale-left scales"></i>
+                    <i class="fas fa-balance-scale scales"></i>
+
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                    <br></br><br></br>
+                        Information on the pros of crypto-currency investing
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-4">
-                        <h5>Column 2</h5>
+                    <i class="fas fa-balance-scale scales"></i>
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                    <br></br><br></br>
+                        General information on crypto-currency investing<br></br><br></br>
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-4">
-                        <h5>Column 3</h5>
+                    <i class="fas fa-balance-scale-right scales"></i>
+                    <i class="fas fa-balance-scale scales"></i>
+
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                                            <br></br><br></br>
+                        Information on the cons of crypto-currency investing
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
+
                     </div>
 
 
