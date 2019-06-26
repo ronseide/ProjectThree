@@ -8,17 +8,7 @@ import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import SignUp from "./pages/SignUp";
 import Footer from "./pages/Footer";
-
-
-
-
-
-
-
-
-// import Home from "./pages/Home";
-// import Saved from "./pages/Saved";
-// import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
 
 
 class App extends Component {
@@ -27,7 +17,8 @@ class App extends Component {
     return (
 <Router>
     <div>
-    <Nav />
+    <Nav 
+      />
     <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/Resources" component={Resources}/>
@@ -36,43 +27,12 @@ class App extends Component {
     <Route exact path="/SignUp" component={SignUp}/>
   
     </Switch>
+
     <Footer />
-    
   </div>
   </Router>
     )
 }
 }
-// Hello World
 
 export default App;
-
-
-
-
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

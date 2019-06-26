@@ -6,19 +6,72 @@ function Resources() {
     return (
         <div class="container">
             <body>
-                <h2>This is the Resources Page</h2>
-                Lorem ipsum dolor sit amet, assum sensibus necessitatibus et vix, cum an quod sensibus. Prima oblique suscipit vis ea, utamur liberavisse consequuntur an mea. Menandri praesent suavitate ea vis, legendos deterruisset te mea. Et nostro maiorum cum. Electram interesset qui ex, rebum aliquam moderatius ne vim. Ignota signiferumque ad per.
-                <h5>Subhead</h5>
-                Sit ea minim semper, ludus tibique mea ex. Sed et voluptua accusamus, his tollit utinam consulatu et. Ex brute luptatum atomorum sea, ea tale erat oratio sed. Vel ei choro facilisis, vel te inani alienum deterruisset, mei fierent persequeris eu. An nam enim solet, at ius convenire dissentias comprehensam.
-                <h5>Subhead</h5>
-                Ne salutatus tincidunt eos, pri nihil putent efficiendi ei. In iriure inermis iracundia est. Ut sea libris conclusionemque, nam eu docendi consequat. Quod volutpat est ei, convenire cotidieque eu has, in est quot definitionem.
-                <h5>Subhead</h5>
-                Modo dolores quo eu, vel ut sonet vivendo. Qui forensibus expetendis comprehensam et. Eos ut homero hendrerit, civibus vulputate est at. Regione moderatius cum ex, ex eum option nostrud. Legere populo nusquam at sed, usu tibique appetere delicata cu. Vel ne cibo reprehendunt mediocritatem, augue accumsan ut pri, regione labitur his ea. In cum dolor denique antiopam, habeo nostrum ullamcorper pro ut.
-    
-    
+                <div class="row">
+                <div class="col-md-12">
+                <h2>What is Cryptocurrency?</h2><br></br>
+                {/* <img src="./images/resourcesPhoto1.jpg" alt="Resources" id="resourcesPhoto"></img> */}
+                <br></br>
+                The world of crypto-currencies is an exciting place. Less than a decade old, crypto-currencies are a revolution in both how societies think about money and how savvy investors can reap profits. But this world is not without its dangers and the un-initiated can suffer untold losses. 
+                At Crypto-Currency Tracker, we don't just provide an easy means of tracking current and potential investments, we provide a range of links to informative articles that represent differing views on the market: a general overview, positive views and even more negative points of view.
+                <br></br><br></br> 
+                Click the links below to get started!
+                <br></br><br></br>
+                <div class="divider">
+                        <hr class="left" /><img src="./images/lineGraph1.png" width="25px" height="25px"alt="Line Graph" id="lineGraph"></img>
+                        <hr class="right" />
+                        <br></br>
+                        <br></br>
+
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    <i class="fas fa-balance-scale-left scales"></i>
+                    <i class="fas fa-balance-scale scales"></i>
+
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                    <br></br><br></br>
+                        Information on the pros of crypto-currency investing
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="fas fa-balance-scale scales"></i>
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                    <br></br><br></br>
+                        General information on crypto-currency investing<br></br><br></br>
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <i class="fas fa-balance-scale-right scales"></i>
+                    <i class="fas fa-balance-scale scales"></i>
+
+                    {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+                    lt="Responsive image" /> */}
+                                            <br></br><br></br>
+                        Information on the cons of crypto-currency investing
+                        <ul class="resourceLinks">
+                            <li><a href="http://www.google.com">Link 1</a></li>
+                            <li><a href="http://www.google.com">Link 2</a></li>
+                            <li><a href="http://www.google.com">Link 3</a></li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
             </body>
-
-
         </div>
     );
 }
