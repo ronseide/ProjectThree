@@ -1,28 +1,36 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import SignUp from "./SignUp";
+import Login from "./Login";
 
 
 function Nav(props) {
   return (
     <div id="nav">
-      <Link to="/">
+      <Link className="btn" to="/">
           Home
       </Link>&nbsp;
-      <Link to="/resources">
+      <Link className="btn" to="/resources">
           Resources
       </Link>&nbsp;
-      <Link to="/about">
+      <Link className="btn" to="/about">
           About
       </Link>&nbsp;
-      <Link to="/dashboard">
+      <Link className="btn" to="/dashboard">
           Dashboard
       </Link>&nbsp;
-      <Link to="/signup" className="btn">
+      {/* <Link to="/signup" className="btn">
           Sign Up
-      </Link>&nbsp;
+      </Link>&nbsp; */}
+      <Login>
+
+      </Login>
+      <SignUp>
+
+      </SignUp>
       <div> 
-        <button onClick={props.handleLoginModal}> Login </button>
+
       </div>
      
       
