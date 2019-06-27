@@ -9,13 +9,13 @@ function About() {
             <h1> Meet the Team</h1>
 
 {/* Rons Bio */}
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="img-fluid z-depth-1 rounded-circle"
                             lt="Responsive image" />
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <h2>Ron</h2>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                          </h6>
@@ -26,13 +26,13 @@ function About() {
             </div>
 
             {/* Gabes Bio */}
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="img-fluid z-depth-1 rounded-circle"
                             lt="Responsive image" />
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <h2>Gabe</h2>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                          </h6>
@@ -43,13 +43,13 @@ function About() {
             </div>
 
             {/* Nicoles Bio */}
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="img-fluid z-depth-1 rounded-circle"
                             lt="Responsive image" />
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <h2>Nicole</h2>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                          </h6>
@@ -61,13 +61,13 @@ function About() {
 
 
 {/* Dans Bio */}
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="img-fluid z-depth-1 rounded-circle"
                             lt="Responsive image" />
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <h2>Dan</h2>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                          </h6>
@@ -78,13 +78,13 @@ function About() {
             </div>
 
             {/* Russels Bio */}
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="img-fluid z-depth-1 rounded-circle"
                             lt="Responsive image" />
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <h2>Russel</h2>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                          </h6>

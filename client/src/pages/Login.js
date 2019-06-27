@@ -32,39 +32,39 @@ class Login extends React.Component{
             <div className="container">
     
     
-                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                <div className="modal fade" id="modalLoginForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header text-center">
-                                <h4 class="modal-title w-100 font-weight-bold">Login</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header text-center">
+                                <h4 className="modal-title w-100 font-weight-bold">Login</h4>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body mx-3">
-                                <div class="md-form mb-5">
+                            <div className="modal-body mx-3">
+                                <div className="md-form mb-5">
                                     
-                                    <input onChange={(e) => this.updateInput("email", e)} type="email" id="defaultForm-email" class="form-control validate" placeholder="Email" />
+                                    <input onChange={(e) => this.updateInput("email", e)} type="email" id="defaultForm-email" className="form-control validate" placeholder="Email" />
                                  
                                 </div>
     
-                                <div class="md-form mb-4">
+                                <div className="md-form mb-4">
                                 
-                                    <input onChange={(e) => this.updateInput("password", e)} type="password" id="defaultForm-pass" class="form-control validate" placeholder="Password"/>
+                                    <input onChange={(e) => this.updateInput("password", e)} type="password" id="defaultForm-pass" className="form-control validate" placeholder="Password"/>
                                     
                                 </div>
     
                             </div>
-                            <div class="modal-footer d-flex justify-content-center">
-                                <button onClick={() => this.handleClick()} class="btn btn-default">Login</button>
+                            <div className="modal-footer d-flex justify-content-center">
+                                <button onClick={() => this.handleClick()} className="btn btn-default">Login</button>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <div class="text-center">
-                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+                <div className="text-center">
+                    <a href="" className="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
                 </div>
             </div>
         
