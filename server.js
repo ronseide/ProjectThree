@@ -11,8 +11,10 @@ app.use(bodyParser.urlencoded({
 }))
 
 var Users = require("./routes/Users")
+var Currencies = require("./routes/Currencies")
 
 app.use("/users", Users)
+app.use("/currencies", Currencies)
 
 app.listen(port, () => {
     console.log("Server is running on port: " + port)

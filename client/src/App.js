@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Nav from "./pages/Nav";
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home"
 import Resources from "./pages/Resources";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Dashboard from "./pages/Dashboard";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/SignUp/SignUp";
 import Footer from "./pages/Footer";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login";
 
 
 class App extends Component {
