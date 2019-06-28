@@ -5,7 +5,7 @@ import "./style.css";
 function SignUp() {
     return(
     
-<div className="container">
+<div>
         <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -48,9 +48,7 @@ function SignUp() {
         </div>
       </div>
       
-      <div class="text-center">
-        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a>
-      </div>
+        
       </div>
             
         

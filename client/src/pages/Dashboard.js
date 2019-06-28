@@ -2,7 +2,15 @@ import React from "react";
 import "./style.css";
 
 
+
 function Dashboard() {
+    function DashboardDropDown () {
+        console.log(this)
+    }
+    var dropDownItems = document.getElementsByClassName ("dropdown-item")
+     for (var i = 0; i < dropDownItems.length; i ++) {
+        dropDownItems[i].addEventListener ("click",DashboardDropDown)
+     }
     return (
         <div class="container">
             <body>
@@ -22,7 +30,7 @@ function Dashboard() {
                                 Dropdown
   </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item" type="button">Bitcoin</button>
+                                <button class="dropdown-item" type="button" >Bitcoin</button>
                                 <button class="dropdown-item" type="button">Litecoin</button>
                                 <button class="dropdown-item" type="button">Ethereum</button>
                                 <button class="dropdown-item" type="button">Zcash</button>

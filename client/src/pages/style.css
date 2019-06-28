@@ -5,6 +5,13 @@ body {
     text-align: right;
     color: blue;
 }
+.navbox {
+    padding-right: 0px;
+}
+.modalButton {
+    padding-left: 0px;
+    width: 120px;
+}
 .container {
     width: 90%;
 }
@@ -53,4 +60,7 @@ h5 {
 }
 .resourceLinks {
     text-align: left;
+}
+#loginButton {
+    /* text-align: right; */
 }

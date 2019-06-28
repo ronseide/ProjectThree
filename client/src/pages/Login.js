@@ -5,10 +5,10 @@ import "./style.css";
 function Login() {
     return(
     
-        <div className="container">
+        <div className="container1">
 
 
-            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            <div className="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -39,9 +39,9 @@ function Login() {
                 </div>
             </div>
 
-            <div class="text-center">
-                <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
-            </div>
+            {/* <div class="text-center"> */}
+                {/* <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm" id="loginButton">Login</a> */}
+            {/* </div> */}
         </div>
     
 
