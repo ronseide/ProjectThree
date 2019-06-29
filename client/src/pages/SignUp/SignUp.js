@@ -23,13 +23,20 @@ class SignUp extends React.Component {
         email: this.state.email,
          password: this.state.password,
         })
-        console.log(this.state.first_name);
+        .then((res) => {
+          console.log(res);
+          this.props.setUser(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        
  }
 
   updateInput = (input, event) => {
     event.persist();
-    console.log(event);
-    console.log(input);
+    // console.log(event);
+    // console.log(input);
     this.setState({[input]:event.target.value});
 
   }

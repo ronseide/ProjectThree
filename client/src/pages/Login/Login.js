@@ -28,8 +28,8 @@ class Login extends React.Component{
 
      updateInput = (input, event) => {
         event.persist();
-        console.log(event);
-        console.log(input);
+        // console.log(event);
+        // console.log(input);
         this.setState({[input]:event.target.value});
     
       }

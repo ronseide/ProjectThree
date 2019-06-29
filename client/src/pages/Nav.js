@@ -36,7 +36,7 @@ function Nav(props) {
 
       </Login>
       
-      <SignUp>
+      <SignUp setUser={props.setUser}  user={props.user} history={props.history}>
 
       </SignUp>
 

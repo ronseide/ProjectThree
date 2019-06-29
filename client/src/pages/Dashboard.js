@@ -18,6 +18,7 @@ function Dashboard(user) {
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Crypto-Currency Tracker</h1>
+                        <h2> Hi, {user.user.user_name}. <br/> Welcome to your Dashboard.</h2>
                     </div>
                 </div>
                 <div class="row">
