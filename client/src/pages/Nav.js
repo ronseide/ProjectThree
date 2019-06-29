@@ -19,7 +19,7 @@ function Nav(props) {
       <Link className="btn" to="/about">
           About
       </Link>&nbsp;
-      <Link className="btn" to="/dashboard" hidden={!props.user}>
+      <Link className="btn" to="/dashboard" hidden={!props.user} user={props.user}>
           Dashboard
       </Link>&nbsp;
       <Link className="btn" to="" data-toggle="modal" data-target="#modalRegisterForm">

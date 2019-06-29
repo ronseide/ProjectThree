@@ -3,7 +3,8 @@ import "./style.css";
 
 
 
-function Dashboard() {
+function Dashboard(user) {
+    console.log(user)
     function DashboardDropDown () {
         console.log(this)
     }
