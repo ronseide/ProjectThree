@@ -8,7 +8,7 @@ function Resources() {
             <body>
                 <div class="row">
                 <div class="col-md-12">
-                <h2>What is Cryptocurrency?</h2><br></br>
+                <h1>What is Cryptocurrency?</h1><br></br>
                 {/* <img src="./images/resourcesPhoto1.jpg" alt="Resources" id="resourcesPhoto"></img> */}
                 <br></br>
                 The world of crypto-currencies is an exciting place. Less than a decade old, crypto-currencies are a revolution in both how societies think about money and how savvy investors can reap profits. But this world is not without its dangers and the un-initiated can suffer untold losses. 
@@ -27,8 +27,7 @@ function Resources() {
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                    <i class="fas fa-balance-scale-left scales"></i>
-                    <i class="fas fa-balance-scale scales"></i>
+                    <i class="far fa-smile face"></i>
 
                     {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
                     lt="Responsive image" /> */}
@@ -41,7 +40,7 @@ function Resources() {
                         </ul>
                     </div>
                     <div class="col-md-4">
-                    <i class="fas fa-balance-scale scales"></i>
+                    <i class="far fa-meh face"></i>
                     {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
                     lt="Responsive image" /> */}
                     <br></br><br></br>
@@ -53,8 +52,7 @@ function Resources() {
                         </ul>
                     </div>
                     <div class="col-md-4">
-                    <i class="fas fa-balance-scale-right scales"></i>
-                    <i class="fas fa-balance-scale scales"></i>
+                    <i class="far fa-frown face"></i>
 
                     {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
                     lt="Responsive image" /> */}

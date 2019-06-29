@@ -71,9 +71,9 @@ class Login extends React.Component{
                     </div>
                 </div>
     
-                <div className="text-center">
+                {/* <div className="text-center">
                     <a href="" className="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
-                </div>
+                </div> */}
             </div>
         
     
