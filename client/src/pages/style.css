@@ -3,7 +3,11 @@ body {
 }
 #nav {
     text-align: right;
-    color: blue;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 .navbox {
     padding-right: 0px;
@@ -15,7 +19,7 @@ body {
 .container {
     width: 90%;
 }
-h2 {
+h1 {
     text-align: center;
     
 }
@@ -55,9 +59,11 @@ h5 {
 .right {
     float:right;
 }
-.scales {
-    font-size: 8em;
+.face {
+    font-size: 6em;
     text-align: center;
+    color: rgb(60, 60, 60);
+
 }
 .resourceLinks {
     text-align: left;
@@ -80,4 +86,7 @@ h5 {
 .dan {
     text-align: left;
    padding: 50px;
+}
+.footer {
+    background-color: rgb(60, 60, 60);
 }

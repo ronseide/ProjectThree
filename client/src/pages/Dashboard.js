@@ -16,7 +16,7 @@ function Dashboard() {
             <body>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Crypto-Currency Tracker Dashboard</h2>
+                        <h1>Crypto-Currency Tracker</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -27,7 +27,7 @@ function Dashboard() {
                         <br></br>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
+                                Select&nbsp;&nbsp;
   </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item" type="button" >Bitcoin</button>
