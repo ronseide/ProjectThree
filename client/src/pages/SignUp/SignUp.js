@@ -11,10 +11,15 @@ class SignUp extends React.Component {
   };
 
   handleClick = () => {
-    console.log(this.state.firstName);
-    console.log(this.state.lastName);
-    console.log(this.state.email);
-    console.log(this.state.password);
+    console.log(this.props.firstName);
+    console.log(this.props.lastName);
+    console.log(this.props.email);
+    console.log(this.props.password);
+
+    // console.log(this.state.firstName);
+    // console.log(this.state.lastName);
+    // console.log(this.state.email);
+    // console.log(this.state.password);
     axios
       .post("http://localhost:3001/users/register", 
     {first_name: this.state.firstName,
@@ -22,6 +27,7 @@ class SignUp extends React.Component {
         email: this.state.email,
          password: this.state.password,
         })
+        console.log(this.state.first_name);
  }
 
   updateInput = (input, event) => {
