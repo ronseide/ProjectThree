@@ -22,10 +22,10 @@ function Nav(props) {
       <Link className="btn" to="/dashboard" hidden={!props.user} user={props.user}>
           Dashboard
       </Link>&nbsp;
-      <Link className="btn" to="" data-toggle="modal" data-target="#modalRegisterForm">
+      <Link className="btn" to="" data-toggle="modal" data-target="#modalRegisterForm" hidden={props.user} user={props.user}>
           Sign Up
       </Link>&nbsp;
-      <Link className="btn" to="" data-toggle="modal" data-target="#modalLoginForm" id="loginButton">
+      <Link className="btn" to="" data-toggle="modal" data-target="#modalLoginForm" id="loginButton" >
           Login
       </Link>&nbsp;
 
