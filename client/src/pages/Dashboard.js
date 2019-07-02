@@ -2,24 +2,34 @@ import React from "react";
 import "./style.css";
 
 window.onload = function() {
+    //rons
     function DashboardDropDown (theEvent) {
         console.log("DashboardDropDown is alive")
         console.log(theEvent.srcElement.innerHTML)
     }
+    //nicoles
+    function Dashboard(user) {
+        console.log(user)
+        function DashboardDropDown () {
+            console.log(this)
+        }
+    }
 
-    var dropDownItems = document.getElementsByClassName("dropdown-item");
-    console.log("ITEMS");
-    console.log(dropDownItems);
-    console.log(dropDownItems.length);
-    console.log("LENGTH: " + dropDownItems.length);
-    for (var i = 0; i < dropDownItems.length; i ++) {
-        //dropDownItems[i].addEventListener ("click",DashboardDropDown)
-        console.log("Event listener " + dropDownItems[i]);
-        dropDownItems[i].addEventListener ("click", function(event) {
-            DashboardDropDown(event);
-        });
-     }
+    // var dropDownItems = document.getElementsByClassName("dropdown-item");
+    // console.log("ITEMS");
+    // console.log(dropDownItems);
+    // console.log(dropDownItems.length);
+    // console.log("LENGTH: " + dropDownItems.length);
+    // for (var i = 0; i < dropDownItems.length; i ++) {
+    //     //dropDownItems[i].addEventListener ("click",DashboardDropDown)
+    //     console.log("Event listener " + dropDownItems[i]);
+    //     dropDownItems[i].addEventListener ("click", function(event) {
+    //         DashboardDropDown(event);
+    //     });
+    //  }
 }
+
+
 function Dashboard() {
     console.log("MAKING THE DASHBOARD");
      
@@ -29,6 +39,7 @@ function Dashboard() {
                 <div className="row">
                     <div className="col-md-12">
                         <h1>Crypto-Currency Tracker</h1>
+                        <h2> Hi, {this.user.user.user_name}. <br/> Welcome to your Dashboard.</h2>
                     </div>
                 </div>
                 <div className="row">

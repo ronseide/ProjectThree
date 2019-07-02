@@ -19,7 +19,7 @@ function Nav(props) {
       <Link className="btn" to="/about">
           About
       </Link>&nbsp;
-      <Link className="btn" to="/dashboard">
+      <Link className="btn" to="/dashboard" hidden={!props.user} user={props.user}>
           Dashboard
       </Link>&nbsp;
       <Link className="btn" to="" data-toggle="modal" data-target="#modalRegisterForm">
@@ -32,11 +32,11 @@ function Nav(props) {
 
       </div>
 
-      <Login>
+      <Login setUser={props.setUser}  user={props.user} history={props.history}>
 
       </Login>
       
-      <SignUp>
+      <SignUp setUser={props.setUser}  user={props.user} history={props.history}>
 
       </SignUp>
 

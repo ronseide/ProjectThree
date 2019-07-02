@@ -12,18 +12,25 @@ import Login from "./pages/Login/Login";
 
 
 class App extends Component {
+  state = {
+    user: null
+  }
+
+  setUser = (user) => this.setState({ user });
 
   render() {
     return (
 <Router>
     <div>
     <Nav 
+      setUser={this.setUser}
+      user={this.state.user}
       />
     <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/Resources" component={Resources}/>
     <Route exact path="/About" component={About}/>
-    <Route exact path="/Dashboard" component={Dashboard}/>
+    <Route exact path="/Dashboard" component={() => this.state.user ? <Dashboard user={this.state.user}/> : <Home />}/>
     <Route exact path="/SignUp" component={SignUp}/>
   
     </Switch>
