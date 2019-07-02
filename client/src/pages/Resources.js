@@ -32,11 +32,11 @@ function Resources() {
                     {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
                     lt="Responsive image" /> */}
                     <br></br><br></br>
-                        Information on the pros of crypto-currency investing
+                        Information on the advantages and benefits of crypto-currency investing
                         <ul class="resourceLinks">
-                            <li><a href="http://www.google.com">Link 1</a></li>
-                            <li><a href="http://www.google.com">Link 2</a></li>
-                            <li><a href="http://www.google.com">Link 3</a></li>
+                            <li><a href="https://cryptocurry.com/features/amazing-benefits-investing-cryptocurrencies/">CryptoCurry: Amazing Benefits Of Investing In Cryptocurrencies</a></li>
+                            <li><a href="https://blockgeeks.com/5-benefits-cryptocurrency/">Blockgeeks: 5 Amazing Benefits of Cryptocurrency: A New Digital Future</a></li>
+                            <li><a href="https://www.huffpost.com/entry/7-incredible-benefits-of_b_13160110">Huffington Post: 7 Incredible Benefits Of Cryptocurrency</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
@@ -46,9 +46,10 @@ function Resources() {
                     <br></br><br></br>
                         General information on crypto-currency investing<br></br><br></br>
                         <ul class="resourceLinks">
-                            <li><a href="http://www.google.com">Link 1</a></li>
-                            <li><a href="http://www.google.com">Link 2</a></li>
-                            <li><a href="http://www.google.com">Link 3</a></li>
+                            <li><a href="https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html">PWC: Making sense of bitcoin, cryptocurrency and blockchain</a></li>
+                            <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp">Investopedia: Cryptocurrency</a></li>
+                            <li><a href="https://www.toptal.com/finance/market-research-analysts/cryptocurrency-market">Toptal: Demystifying Cryptocurrencies, Blockchain, and ICOs
+</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
@@ -57,11 +58,11 @@ function Resources() {
                     {/* <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" class="img-fluid z-depth-1 rounded-circle"
                     lt="Responsive image" /> */}
                                             <br></br><br></br>
-                        Information on the cons of crypto-currency investing
+                        Information on the disadvantages and risks of crypto-currency investing
                         <ul class="resourceLinks">
-                            <li><a href="http://www.google.com">Link 1</a></li>
-                            <li><a href="http://www.google.com">Link 2</a></li>
-                            <li><a href="http://www.google.com">Link 3</a></li>
+                            <li><a href="https://www.prescouter.com/2017/11/disadvantages-of-cryptocurrencies/">PreScouter: What are the disadvantages of cryptocurrencies?</a></li>
+                            <li><a href="https://www.quora.com/What-are-the-disadvantages-of-cryptocurrencies">Quora: What are the disadvantages of cryptocurrencies?</a></li>
+                            <li><a href="https://www.kaspersky.com/blog/cryptocurrencies-intended-risks/20034/">Kaspersky Daily: Problems and risks of cryptocurrencies</a></li>
                         </ul>
 
                     </div>

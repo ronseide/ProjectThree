@@ -1,66 +1,87 @@
 import React from "react";
 import "./style.css";
 
-
-
-function Dashboard(user) {
-    console.log(user)
-    function DashboardDropDown () {
-        console.log(this)
+window.onload = function() {
+    //rons
+    function DashboardDropDown (theEvent) {
+        console.log("DashboardDropDown is alive")
+        console.log(theEvent.srcElement.innerHTML)
     }
-    var dropDownItems = document.getElementsByClassName ("dropdown-item")
-     for (var i = 0; i < dropDownItems.length; i ++) {
-        dropDownItems[i].addEventListener ("click",DashboardDropDown)
-     }
+    //nicoles
+    function Dashboard(user) {
+        console.log(user)
+        function DashboardDropDown () {
+            console.log(this)
+        }
+    }
+
+    // var dropDownItems = document.getElementsByClassName("dropdown-item");
+    // console.log("ITEMS");
+    // console.log(dropDownItems);
+    // console.log(dropDownItems.length);
+    // console.log("LENGTH: " + dropDownItems.length);
+    // for (var i = 0; i < dropDownItems.length; i ++) {
+    //     //dropDownItems[i].addEventListener ("click",DashboardDropDown)
+    //     console.log("Event listener " + dropDownItems[i]);
+    //     dropDownItems[i].addEventListener ("click", function(event) {
+    //         DashboardDropDown(event);
+    //     });
+    //  }
+}
+
+
+function Dashboard() {
+    console.log("MAKING THE DASHBOARD");
+     
     return (
-        <div class="container">
+        <div className="container">
             <body>
-                <div class="row">
-                    <div class="col-md-12">
+                <div className="row">
+                    <div className="col-md-12">
                         <h1>Crypto-Currency Tracker</h1>
-                        <h2> Hi, {user.user.user_name}. <br/> Welcome to your Dashboard.</h2>
+                        <h2> Hi, {this.user.user.user_name}. <br/> Welcome to your Dashboard.</h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6" id="dashboardDropdown">
+                <div className="row">
+                    <div className="col-md-6" id="dashboardDropdown">
                         <br></br>
                         To select the crypto-currencies you wish to track, please select items from the below dropdown by clicking on any of them. Your tracked crypto-currencies will appear at right.
                     <br></br>
                         <br></br>
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div className="dropdown">
+                            <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Select&nbsp;&nbsp;
   </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item" type="button" >Bitcoin</button>
-                                <button class="dropdown-item" type="button">Litecoin</button>
-                                <button class="dropdown-item" type="button">Ethereum</button>
-                                <button class="dropdown-item" type="button">Zcash</button>
-                                <button class="dropdown-item" type="button">Dash</button>
-                                <button class="dropdown-item" type="button">Ripple</button>
-                                <button class="dropdown-item" type="button">Monero</button>
-                                <button class="dropdown-item" type="button">Bitcoin Cash</button>
-                                <button class="dropdown-item" type="button">NEO</button>
-                                <button class="dropdown-item" type="button">Cardano</button>
-                                <button class="dropdown-item" type="button">EOS</button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button className="dropdown-item" type="button" >Bitcoin</button>
+                                <button className="dropdown-item" type="button">Litecoin</button>
+                                <button className="dropdown-item" type="button">Ethereum</button>
+                                <button className="dropdown-item" type="button">Zcash</button>
+                                <button className="dropdown-item" type="button">Dash</button>
+                                <button className="dropdown-item" type="button">Ripple</button>
+                                <button className="dropdown-item" type="button">Monero</button>
+                                <button className="dropdown-item" type="button">Bitcoin Cash</button>
+                                <button className="dropdown-item" type="button">NEO</button>
+                                <button className="dropdown-item" type="button">Cardano</button>
+                                <button className="dropdown-item" type="button">EOS</button>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" id="dashboardList">
+                    <div className="col-md-6" id="dashboardList">
                         <br></br>
                         To remove a crypto-currency from tracking, simply click the "X" beside the item.
                         <br></br>
                         <br></br>
                         <ul>
-                            <li>Bitcoin <strong>X</strong></li>
-                            <li>Dash <strong>X</strong></li>
-                            <li>NEO <strong>X</strong></li>
+                            <li>Bitcoin <button type="button" class="btn btn-link btn-sm">Remove</button></li>
+                            <li>Dash <button type="button" class="btn btn-link btn-sm">Remove</button></li>
+                            <li>NEO <button type="button" class="btn btn-link btn-sm">Remove</button></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" id="dashboardTracker">
+                <div className="row">
+                    <div className="col-md-12" id="dashboardTracker">
                         <br></br>
                         <h3>Tracking</h3>
                         <hr></hr>

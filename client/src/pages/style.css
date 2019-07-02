@@ -66,8 +66,38 @@ h5 {
 
 }
 .resourceLinks {
+    color: red;
     text-align: left;
+    color: rgb(60, 60, 60); 
+
+  } 
+#brandButton {
+    float: left;
+    /* background-color: rgb(60, 60, 60); */
+    /* color: white; */
 }
+  a:link {
+    color: rgb(60, 60, 60); 
+
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(60, 60, 60); 
+
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(60, 60, 60); 
+
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(60, 60, 60); 
+
+  }
 
 /*about page styling*/
 
