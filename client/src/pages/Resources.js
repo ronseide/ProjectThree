@@ -34,9 +34,9 @@ function Resources() {
                     <br></br><br></br>
                         Information on the advantages and benefits of crypto-currency investing
                         <ul class="resourceLinks">
-                            <li><a href="https://cryptocurry.com/features/amazing-benefits-investing-cryptocurrencies/">CryptoCurry: Amazing Benefits Of Investing In Cryptocurrencies</a></li>
-                            <li><a href="https://blockgeeks.com/5-benefits-cryptocurrency/">Blockgeeks: 5 Amazing Benefits of Cryptocurrency: A New Digital Future</a></li>
-                            <li><a href="https://www.huffpost.com/entry/7-incredible-benefits-of_b_13160110">Huffington Post: 7 Incredible Benefits Of Cryptocurrency</a></li>
+                            <li><a href="https://cryptocurry.com/features/amazing-benefits-investing-cryptocurrencies/" target="_blank">CryptoCurry: Amazing Benefits Of Investing In Cryptocurrencies</a></li>
+                            <li><a href="https://blockgeeks.com/5-benefits-cryptocurrency/" target="_blank">Blockgeeks: 5 Amazing Benefits of Cryptocurrency: A New Digital Future</a></li>
+                            <li><a href="https://www.huffpost.com/entry/7-incredible-benefits-of_b_13160110" target="_blank">Huffington Post: 7 Incredible Benefits Of Cryptocurrency</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
@@ -46,9 +46,9 @@ function Resources() {
                     <br></br><br></br>
                         General information on crypto-currency investing<br></br><br></br>
                         <ul class="resourceLinks">
-                            <li><a href="https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html">PWC: Making sense of bitcoin, cryptocurrency and blockchain</a></li>
-                            <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp">Investopedia: Cryptocurrency</a></li>
-                            <li><a href="https://www.toptal.com/finance/market-research-analysts/cryptocurrency-market">Toptal: Demystifying Cryptocurrencies, Blockchain, and ICOs
+                            <li><a href="https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html" target="_blank">PWC: Making sense of bitcoin, cryptocurrency and blockchain</a></li>
+                            <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp" target="_blank">Investopedia: Cryptocurrency</a></li>
+                            <li><a href="https://www.toptal.com/finance/market-research-analysts/cryptocurrency-market" target="_blank">Toptal: Demystifying Cryptocurrencies, Blockchain, and ICOs
 </a></li>
                         </ul>
                     </div>
@@ -60,9 +60,9 @@ function Resources() {
                                             <br></br><br></br>
                         Information on the disadvantages and risks of crypto-currency investing
                         <ul class="resourceLinks">
-                            <li><a href="https://www.prescouter.com/2017/11/disadvantages-of-cryptocurrencies/">PreScouter: What are the disadvantages of cryptocurrencies?</a></li>
-                            <li><a href="https://www.quora.com/What-are-the-disadvantages-of-cryptocurrencies">Quora: What are the disadvantages of cryptocurrencies?</a></li>
-                            <li><a href="https://www.kaspersky.com/blog/cryptocurrencies-intended-risks/20034/">Kaspersky Daily: Problems and risks of cryptocurrencies</a></li>
+                            <li><a href="https://www.prescouter.com/2017/11/disadvantages-of-cryptocurrencies/" target="_blank">PreScouter: What are the disadvantages of cryptocurrencies?</a></li>
+                            <li><a href="https://www.quora.com/What-are-the-disadvantages-of-cryptocurrencies" target="_blank">Quora: What are the disadvantages of cryptocurrencies?</a></li>
+                            <li><a href="https://www.kaspersky.com/blog/cryptocurrencies-intended-risks/20034/" target="_blank">Kaspersky Daily: Problems and risks of cryptocurrencies</a></li>
                         </ul>
 
                     </div>

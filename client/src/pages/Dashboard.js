@@ -15,18 +15,18 @@ window.onload = function() {
         }
     }
 
-    // var dropDownItems = document.getElementsByClassName("dropdown-item");
-    // console.log("ITEMS");
-    // console.log(dropDownItems);
-    // console.log(dropDownItems.length);
-    // console.log("LENGTH: " + dropDownItems.length);
-    // for (var i = 0; i < dropDownItems.length; i ++) {
-    //     //dropDownItems[i].addEventListener ("click",DashboardDropDown)
-    //     console.log("Event listener " + dropDownItems[i]);
-    //     dropDownItems[i].addEventListener ("click", function(event) {
-    //         DashboardDropDown(event);
-    //     });
-    //  }
+    var dropDownItems = document.getElementsByClassName("dropdown-item");
+    console.log("ITEMS");
+    console.log(dropDownItems);
+    console.log(dropDownItems.length);
+    console.log("LENGTH: " + dropDownItems.length);
+    for (var i = 0; i < dropDownItems.length; i ++) {
+        //dropDownItems[i].addEventListener ("click",DashboardDropDown)
+        console.log("Event listener " + dropDownItems[i]);
+        dropDownItems[i].addEventListener ("click", function(event) {
+            DashboardDropDown(event);
+        });
+     }
 }
 
 

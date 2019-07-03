@@ -89,13 +89,13 @@ h5 {
   
   /* mouse over link */
   a:hover {
-    color: rgb(60, 60, 60); 
+    color: rgb(0,0,0); 
 
   }
   
   /* selected link */
   a:active {
-    color: rgb(60, 60, 60); 
+    color: rgb(128,128,128); 
 
   }
 
