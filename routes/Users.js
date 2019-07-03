@@ -78,11 +78,15 @@ users.post("/register", (req, res) => {
     .catch(err => {
         res.send("error: " + err)
     })
+});
 
 users.post("/login", (req, res) => {
+    console.log('!!')
     User.findOne({
         where: {
-            email: req.body.email
+            email: req.body.email,
+            //password: req.body.password
+            // added password line 1930 hrs 8/2/19
         }
     })
     .then(user => {
@@ -101,8 +105,8 @@ users.post("/login", (req, res) => {
     })
     .catch(err => {
         res.status(400).json({ error: err})
-    })
-})
+    });
+});
   
- })
+
 module.exports = users;
