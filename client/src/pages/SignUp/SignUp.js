@@ -25,6 +25,7 @@ class SignUp extends React.Component {
         })
         .then((res) => {
           console.log(res);
+          console.log(res.data);
           this.props.setUser(res.data);
         })
         .catch((err) => {
@@ -47,7 +48,7 @@ class SignUp extends React.Component {
     return(
     
       <div className="SignUp">
-              <div className="modal fade" id="modalRegisterForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
+              <div className="modal fade collapse" id="modalRegisterForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <div className="modal-dialog" role="document">
                 <div className="modal-content">
@@ -58,6 +59,7 @@ class SignUp extends React.Component {
                     </button>
                   </div>
                   <div className="modal-body mx-3">
+                  <form className="signUpForm">
                     <div className="md-form mb-5">
                     
                       <input onChange={(e) => this.updateInput("firstName", e)} type="text" id="orangeForm-name" className="form-control validate" placeholder="First Name"/>
@@ -81,17 +83,18 @@ class SignUp extends React.Component {
                      
                     </div>
             
-                  </div>
+                  
                   <div className="modal-footer d-flex justify-content-center">
-                    <button onClick={() => this.handleClick()} className="btn btn-default">Sign up</button>
+                    <button onClick={() => this.handleClick()} id="signUpSubmit" className="btn btn-default" data-toggle="collapse" data-target="#modalRegisterForm"
+    aria-expanded="false" aria-controls="modalRegisterForm" data-dismiss="modal" >Sign up</button>
                   </div>
+                 </form>
+                </div>
                 </div>
               </div>
             </div>
             
-            {/* <div className="text-center">
-              <a href=""  className="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a>
-            </div> */}
+ 
             </div>
                   
               

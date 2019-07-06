@@ -11,6 +11,7 @@ class Login extends React.Component{
     handleClick = () => {
         console.log(this.state.email);
         console.log(this.state.password);
+        console.log(this.handleClick);
         axios
         .post("http://localhost:3001/users/login", 
         {     email: this.state.email,
@@ -40,8 +41,8 @@ class Login extends React.Component{
             <div className="container">
     
     
-                <div className="modal fade" id="modalLoginForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
+                <div className="modal fade collapse" id="modalLoginForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true"  >
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header text-center">
@@ -51,8 +52,8 @@ class Login extends React.Component{
                                 </button>
                             </div>
                             <div className="modal-body mx-3">
+                            <form className="loginForm">
                                 <div className="md-form mb-5">
-                                    
                                     <input onChange={(e) => this.updateInput("email", e)} type="email" id="defaultForm-email" className="form-control validate" placeholder="Email" />
                                  
                                 </div>
@@ -63,17 +64,19 @@ class Login extends React.Component{
                                     
                                 </div>
     
-                            </div>
+                            
                             <div className="modal-footer d-flex justify-content-center">
-                                <button onClick={() => this.handleClick()} className="btn btn-default">Login</button>
+                                <button onClick={() => this.handleClick()} id="loginSubmit" className="btn btn-default" data-toggle="collapse" data-target="#modalLoginForm"
+    aria-expanded="false" aria-controls="modalLoginForm"  data-dismiss="modal">Login</button>
                             </div>
+                            </form>
+    
                         </div>
                     </div>
                 </div>
+                </div>
     
-                {/* <div className="text-center">
-                    <a href="" className="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
-                </div> */}
+              
             </div>
         
     
@@ -82,6 +85,7 @@ class Login extends React.Component{
             
         );
       }
+    
 }
 
 
