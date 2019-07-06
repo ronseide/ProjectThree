@@ -38,7 +38,9 @@ class SignUp extends React.Component {
     // console.log(event);
     // console.log(input);
     this.setState({[input]:event.target.value});
-
+    console.log("STATE");
+    console.log(this.state);
+  
   }
 
   render() {
