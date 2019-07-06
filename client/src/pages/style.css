@@ -86,6 +86,7 @@ h5 {
   
 /*Nav bar css*/ 
 
+
 #brandButton,
 #loginButton,
 #resourcesButton,
@@ -97,6 +98,26 @@ h5 {
    
     border: 2px solid aquamarine;
     
+
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(0,0,0); 
+
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(128,128,128); 
+
+  }
+
+/*about page styling*/
+
+.headshot {
+    margin: 50px;
+>>>>>>> 64c5b52d9b7e0afd35dca61d19d28087ee968303
 }
 
 #brandButton {
