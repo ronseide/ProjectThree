@@ -24,17 +24,37 @@ currencies.post("/currency", (req, res) => {
     const today = new Date()
 
     const currencyData = {
-        currency_name:req.body.currency_name,
+        currency_name:req.body.currency_name.toLowerCase(),
         user_id: req.body.user_id,
         created_at: today
     }
 
-        Currency.create(currencyData)
+    Currency.create(currencyData)
         .then(c => {
+            console.log(currencyData);
+            console.log(c);
             res.json({
                 status: c
             })
         })
-});
 
+        
+        
+    });
+    currencies.delete("/currency/:id", (req, res) => {
+            
+        Currency.destroy({
+        where: {
+             //user_id: req.params.user_id,
+             id: req.params.id
+        }
+    })
+      .then((currencies) =>  {
+        res.json(currencies);
+      });
+    });
+    
+
+    
+ 
 module.exports = currencies;

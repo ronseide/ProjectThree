@@ -7,7 +7,10 @@ class Dashboard extends React.Component {
     state = {
         currency_name: "",
         user_id: this.props.user.user_id,
-        currency_names: []
+        currency_names: [],
+        // new_names:""
+        // new_names: [];
+        // new_names["currency"] = "";
     };
 
     componentDidMount() {
@@ -21,9 +24,17 @@ class Dashboard extends React.Component {
                 {
                     currency_name: e.target.value,
                     user_id: this.props.user.user_id,
+                
+
                 })
             .then((res) => {
                 console.log(res);
+                console.log("The state of currency_name is")
+                console.log(this.state.currency_name);
+                console.log("The state of currency_names is")
+                console.log(this.state.currency_names)
+                this.setState({new_names:this.state.currency_name})
+
             })
             .catch((err) => {
                 console.log(err);
@@ -47,9 +58,11 @@ class Dashboard extends React.Component {
         this.setState({ currency_name: event.target.value }, function () {
             console.log(this.state)
             });
-            this.setState(prevState => ({
-                currency_names: [...prevState.currency_names, this.state.currency_name]
-              }))
+            // this.setState({new_names:this.state.currency_name}, function () {
+            //     console.log("new_name is")
+            //     console.log(this.state)
+            // }
+            // )
         }
     
     
@@ -73,7 +86,8 @@ class Dashboard extends React.Component {
                                         <select onChange={(e) => {
                                             this.updateInput(e)
                                             this.handleClick(e)
-                                            this.getCurrencies(e)
+                                            // this.getCurrencies(e)
+                                            console.log("On Change fired")
                                         }
                                         }>
                                             <option value="Bitcoin">Bitcoin</option>
@@ -97,9 +111,15 @@ class Dashboard extends React.Component {
                                     <br></br>
                                     <ul>
                                         {this.state.currency_names.map((currency) => {
-                                            return <li>{currency.currency_name} <button type="button" class="btn btn-link btn-sm">X</button></li>
+                                            return <li>{currency.currency_name} <button type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>
                                         })}
                                     </ul>
+                                    <li>{this.state.new_names}</li>
+                                    <ul>
+                                    {/* {this.state.new_names.map((currency) => {
+                                            return <li>{currency} <button type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>
+                                        })} */}
+                            </ul>
                                 </div>
                             </div>
                             <div className="row">

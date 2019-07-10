@@ -118,6 +118,11 @@ h5 {
 .headshot {
     margin: 50px;
 
+
+}
+#deleteButton {
+    color: white !important;
+
 }
 
 #brandButton {
