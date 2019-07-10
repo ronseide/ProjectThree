@@ -34,19 +34,6 @@ class Dashboard extends React.Component {
                 console.log("The state of currency_names is")
                 console.log(this.state.currency_names)
                 this.setState({new_names:this.state.currency_name})
-                /*
-                let obj = {id: 99, currency_name: "Whipple", user_id: 1, updated_at: "2011-07-08T18:12:53.000Z", created_at: "2011-07-08T18:12:53.000Z"};
-                */
-            //    let obj = {
-            //        id: res.data.status.currency_name, 
-            //        user_id: res.data.status.id,
-            //        updated_at: res.data.status.updated_at,
-            //        created_at: res.data.status.created_at
-            //     };
-            //     console.log("_____PUSHING_____");
-            //     console.log(obj);
-            //     console.log("----done----")
-            //     this.state.currency_names.push(obj);
 
             })
             .catch((err) => {
