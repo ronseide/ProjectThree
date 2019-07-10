@@ -4,6 +4,10 @@ var bodyParser = require("body-parser")
 var app = express()
 var port = process.env.PORT || 3001
 
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
+
 app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({
@@ -16,6 +20,9 @@ var Currencies = require("./routes/Currencies")
 app.use("/users", Users)
 app.use("/currencies", Currencies)
 
-app.listen(port, () => {
-    console.log("Server is running on port: " + port)
-})
+db.sequelize.sync().then(function() {
+    app.listen(port, function() {
+      console.log("App now listening on port:", port);
+    });
+  });
+  
