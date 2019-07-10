@@ -24,13 +24,15 @@ currencies.post("/currency", (req, res) => {
     const today = new Date()
 
     const currencyData = {
-        currency_name:req.body.currency_name,
+        currency_name: req.body.currency_name,
         user_id: req.body.user_id,
         created_at: today
     }
 
-        Currency.create(currencyData)
+    Currency.create(currencyData)
         .then(c => {
+            console.log(currencyData);
+            console.log(c);
             res.json({
                 status: c
             })
