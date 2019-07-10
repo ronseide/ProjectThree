@@ -33,7 +33,8 @@ render() {
           case "neo":  return "neo";
           default:  return "";
         }
-            })()}
+            })};
+
             </h2>
             <h2>{this.state.currencyInfo && "$" + this.state.currencyInfo.priceUsd}</h2>
             <br></br>
