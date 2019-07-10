@@ -65,7 +65,13 @@ users.post("/register", (req, res) => {
                 userData.password = hash
                 User.create(userData)
                 .then(user => {
-                    res.json({status: user.email + " registered"})
+                    res.json(
+                    {
+                    status: user.email + " registered",
+                    user_name: user.first_name,
+                    last_name: user.last_name,
+                    email: user.email
+                   })
                 })
                 .catch(err => {
                     res.send("error: " + err)
@@ -81,7 +87,7 @@ users.post("/register", (req, res) => {
 });
 
 users.post("/login", (req, res) => {
-    console.log('!!')
+
     User.findOne({
         where: {
             email: req.body.email,

@@ -13,19 +13,19 @@ function Nav(props) {
       <Link className="btn" to="/" id="brandButton">
       <img src="./images/lineGraph1.png" width="20px" height="20px"alt="Line Graph" id="lineGraph"></img>&nbsp;CryptoTracker
       </Link>&nbsp;
-      <Link className="btn" to="/resources">
+      <Link className="btn" to="/resources" id="resourcesButton">
           Resources
       </Link>&nbsp;
-      <Link className="btn" to="/about">
+      <Link className="btn" to="/about" id="aboutButton">
           About
       </Link>&nbsp;
-      <Link className="btn" to="/dashboard" hidden={!props.user} user={props.user}>
+      <Link className="btn" to="/dashboard" id="dashButton" hidden={!props.user} user={props.user}>
           Dashboard
       </Link>&nbsp;
-      <Link className="btn" to="" data-toggle="modal" data-target="#modalRegisterForm" hidden={props.user} user={props.user}>
+      <Link className="btn" to="" id="signUpButton" data-toggle="modal" data-target="#modalRegisterForm" hidden={props.user} user={props.user}>
           Sign Up
       </Link>&nbsp;
-      <Link className="btn" to="" data-toggle="modal" data-target="#modalLoginForm" id="loginButton" hidden={props.user} user={props.user}>
+      <Link className="btn" to="" id="loginButton" data-toggle="modal" data-target="#modalLoginForm" id="loginButton" hidden={props.user} user={props.user}>
           Login
       </Link>&nbsp;
 

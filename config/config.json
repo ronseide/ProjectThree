@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "yeloc1221",
+    "password": "Dob120963",
     "database": "currency_tracker",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -14,10 +14,15 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
+    // "username": "dmaigfb7innd4mzf",
+    // "password": "dxusar7itd68lem0",
+    // "database": "nwwy6efojy8bumy3",
+    // "host": "tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+
+
   }
 }
+
+
