@@ -24,7 +24,7 @@ currencies.post("/currency", (req, res) => {
     const today = new Date()
 
     const currencyData = {
-        currency_name:req.body.currency_name,
+        currency_name:req.body.currency_name.toLowerCase(),
         user_id: req.body.user_id,
         created_at: today
     }
@@ -35,6 +35,24 @@ currencies.post("/currency", (req, res) => {
                 status: c
             })
         })
-});
 
+        
+        
+    });
+    currencies.delete("/currency/:id", (req, res) => {
+            
+        Currency.destroy({
+        where: {
+             //user_id: req.params.user_id,
+             id: req.params.id
+        }
+    })
+      .then((currencies) =>  {
+        res.json(currencies);
+      });
+    });
+    
+
+    
+ 
 module.exports = currencies;

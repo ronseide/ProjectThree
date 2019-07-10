@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import axios from "axios";
-
+import CurrencyChart from "./CurrencyChart/currencyChart"
 
 class Dashboard extends React.Component {
     state = {
@@ -40,6 +40,22 @@ class Dashboard extends React.Component {
             .catch((err) => console.log(err))
     }
 
+    handleClickDelete = (e) => {
+        axios
+            .post("http://localhost:3001/currencies/currency/remove",
+            {
+                id: this.props.user.id,
+            })
+            .then((res) => {
+             console.log(res);
+            })
+            .catch((err) => {
+                
+                console.log(err)
+
+                    
+            })
+        }
 
 
     updateInput = (event) => {
@@ -49,14 +65,15 @@ class Dashboard extends React.Component {
             });
             this.setState(prevState => ({
                 currency_names: [...prevState.currency_names, this.state.currency_name]
-              }))
-        }
+              })
+              )}
+        
     
     
     render() {
                 return(
             <div className = "container" >
-                        <body>
+                
                             <div className="row">
                                 <div className="col-md-12">
                                     <h1>CryptoTracker</h1>
@@ -96,6 +113,8 @@ class Dashboard extends React.Component {
                         <br></br>
                                     <br></br>
                                     <ul>
+                                
+
                                         {this.state.currency_names.map((currency) => {
                                             return <li>{currency.currency_name} <button type="button" class="btn btn-link btn-sm">X</button></li>
                                         })}
@@ -104,6 +123,9 @@ class Dashboard extends React.Component {
                             </div>
                             <div className="row">
                                 <div className="col-md-12" id="dashboardTracker">
+                                {this.state.currency_names.map((currency) => {
+                                    return <CurrencyChart currency={currency.currency_name}/>
+                                })}
                                     <br></br>
                                     <h3>Tracking</h3>
                                     <hr></hr>
@@ -116,7 +138,8 @@ class Dashboard extends React.Component {
                                 <br></br>
                                             <strong>30 Average Market Cap (Millions):&nbsp;</strong> $90,543
                                 <br></br>
-                                            <hr></hr>
+                                            
+
                                         </p>
                                         <h4>Dash</h4>
                                         <p>
@@ -126,7 +149,6 @@ class Dashboard extends React.Component {
                                 <br></br>
                                             <strong>30 Average Market Cap (Millions):&nbsp;</strong> $234,567
                                 <br></br>
-                                            <hr></hr>
                                         </p>
                                         <h4>NEO</h4>
                                         <p>
@@ -136,16 +158,19 @@ class Dashboard extends React.Component {
                                 <br></br>
                                             <strong>30 Average Market Cap (Millions):&nbsp;</strong> $56,432
                                 <br></br>
-                                            <hr></hr>
                                         </p>
+
                                     </div>
                                 </div>
-                            </div>
-                        </body>
+                            
+      </div>
             </div>
 
-        );
-    }
-}
+                )}
+            }
 
-export default Dashboard;
+    
+    
+
+
+export default Dashboard
