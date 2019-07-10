@@ -3,6 +3,7 @@ var cors = require("cors")
 var bodyParser = require("body-parser")
 var app = express()
 var port = process.env.PORT || 3001
+var db = require("./models")
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
