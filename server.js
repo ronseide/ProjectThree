@@ -5,9 +5,22 @@ var app = express()
 var port = process.env.PORT || 3001
 // var db = require("./models")
 
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static("client/build"));
+// }
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
-}
+    app.get("/*", function(req, res) {
+      res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    });
+  }
+  
+  else {
+    app.use(express.static(path.join(__dirname, '/client/public')));
+    app.get("/*", function(req, res) {
+      res.sendFile(path.join(__dirname, "/client/public/index.html"));
+    });
+  }
 
 app.use(bodyParser.json())
 app.use(cors())
@@ -25,5 +38,5 @@ app.use("/currencies", Currencies)
     app.listen(port, function() {
       console.log("App now listening on port:", port);
     });
-//   });
+//   
   
