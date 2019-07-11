@@ -35,8 +35,7 @@ function About() {
                     </div>
                     <div className="col gabe">
                         <h2>Gabe</h2>
-                        <h6 className="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                         </h6>
+                        <h6 className="bio">Gabriel Ungier has a background in medicine, psychology, and vision.  His interests include painting, crafting, puzzles, playing with new technology and above all software development.  He truly enjoys figuring out challenges that invariable arise with all aspects of technology.  On top of all his other pleasures he is a father of two active children and a husband to a loving and beautiful wife.  As a family we find important to drop tech for periods of time and enjoy the gifts of the real world.  </h6>
                         <a href="https://github.com/ronseide" target="_blank">Gabes's Github</a> <br/>
                         <a href="https://www.w3schools.com/" target="_blank">Gabes's Portfolio</a>
                     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import axios from "axios";
+import CurrencyChart from "./CurrencyChart/currencyChart"
 
 
 class Dashboard extends React.Component {
@@ -123,44 +124,22 @@ class Dashboard extends React.Component {
                                 </div>
                             </div>
                             <div className="row">
+
+                            <div className="col-md-12" id="dashboardTracker">
+                                {this.state.currency_names.map((currency) => {
+                                return <CurrencyChart currency={currency.currency_name}/> })}
+
                                 <div className="col-md-12" id="dashboardTracker">
                                     <br></br>
-                                    <h3>Tracking</h3>
-                                    <hr></hr>
-                                    <div>
-                                        <h4>Bitcoin</h4>
-                                        <p>
-                                            <strong>Price Range (Past 30 Days):&nbsp;</strong> $7.87 - $11.76
-                                <br></br>
-                                            <strong>30 Day Average Trading Volume (Shares, Thousands Per Day):&nbsp;</strong> 120,456
-                                <br></br>
-                                            <strong>30 Average Market Cap (Millions):&nbsp;</strong> $90,543
-                                <br></br>
-                                            <hr></hr>
-                                        </p>
-                                        <h4>Dash</h4>
-                                        <p>
-                                            <strong>Price Range (Past 30 Days):&nbsp;</strong> $1.23 - $4.56
-                                <br></br>
-                                            <strong>30 Day Average Trading Volume (Shares, Thousands Per Day):&nbsp;</strong> 78,901
-                                <br></br>
-                                            <strong>30 Average Market Cap (Millions):&nbsp;</strong> $234,567
-                                <br></br>
-                                            <hr></hr>
-                                        </p>
-                                        <h4>NEO</h4>
-                                        <p>
-                                            <strong>Price Range (Past 30 Days):&nbsp;</strong> $6.78 - $9.10
-                                <br></br>
-                                            <strong>30 Day Average Trading Volume (Shares, Thousands Per Day):&nbsp;</strong> 345,861
-                                <br></br>
-                                            <strong>30 Average Market Cap (Millions):&nbsp;</strong> $56,432
-                                <br></br>
-                                            <hr></hr>
-                                        </p>
+                                    
+                                    
+                                           
+                
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                
+                           
                         </body>
             </div>
 
