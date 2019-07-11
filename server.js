@@ -35,6 +35,5 @@ app.use("/currencies", Currencies)
 // db.sequelize.sync().then(function() {
     app.listen(port, function() {
       console.log("App now listening on port:", port);
-    });
-//   });
+    }); 
   
