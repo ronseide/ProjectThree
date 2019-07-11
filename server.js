@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 else {
   app.use(express.static(path.join(__dirname, '/client/public')));
   app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+    res.sendFile(path.join(__dirname, "/client/public/index.html"));
   });
 }
 
@@ -26,14 +26,14 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
-var Users = require("./routes/Users")
-var Currencies = require("./routes/Currencies")
+var Users = require("/routes/Users")
+var Currencies = require("/routes/Currencies")
 
 app.use("/users", Users)
 app.use("/currencies", Currencies)
 
-// db.sequelize.sync().then(function() {
+db.sequelize.sync().then(function() {
     app.listen(port, function() {
       console.log("App now listening on port:", port);
     }); 
-  
+});

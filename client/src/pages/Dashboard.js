@@ -115,14 +115,13 @@ class Dashboard extends React.Component {
                                         })}
                                     </ul>
                                     <li>{this.state.new_names}</li>
-                                    <ul>
-                                    {/* {this.state.new_names.map((currency) => {
-                                            return <li>{currency} <button type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>
-                                        })} */}
-                            </ul>
+                                    
                                 </div>
                             </div>
                             <div className="row">
+                            {this.state.currency_names.map((currency) => {
+                                    return <CurrencyChart currency={currency.currency_name}/>
+                                })}
                                 <div className="col-md-12" id="dashboardTracker">
                                     <br></br>
                                     <h3>Tracking</h3>

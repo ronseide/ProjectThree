@@ -12,10 +12,10 @@ class SignUp extends React.Component {
 
   handleClick = () => {
     
-    console.log(this.state.firstName);
-    console.log(this.state.lastName);
-    console.log(this.state.email);
-    console.log(this.state.password);
+    // console.log(this.state.firstName);
+    // console.log(this.state.lastName);
+    // console.log(this.state.email);
+    // console.log(this.state.password);
     axios
       .post("/users/register", 
     {first_name: this.state.firstName,
@@ -25,7 +25,7 @@ class SignUp extends React.Component {
         })
         .then((res) => {
           console.log(res);
-          console.log(res.data);
+          // console.log(res.data);
           this.props.setUser(res.data);
         })
         .catch((err) => {
