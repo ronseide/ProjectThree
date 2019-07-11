@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
 
     handleClick = (e) => {
         axios
-            .post("http://localhost:3001/currencies/currency",
+            .post("/currencies/currency",
                 {
                     currency_name: e.target.value,
                     user_id: this.props.user.user_id,
@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
     }
     getCurrencies = (e) => {
         axios
-            .get(`http://localhost:3001/currencies/currency/${this.state.user_id}`)
+            .get(`/3001/currencies/currency/${this.state.user_id}`)
             .then((res) => {
                 const currency_names = res.data;
                 this.setState({ currency_names });
