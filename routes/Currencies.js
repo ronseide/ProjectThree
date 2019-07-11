@@ -41,18 +41,18 @@ currencies.post("/currency", (req, res) => {
         
         
     });
-    currencies.delete("/currency/:id", (req, res) => {
+    // currencies.delete("/currency/:id", (req, res) => {
             
-        Currency.destroy({
-        where: {
-             //user_id: req.params.user_id,
-             id: req.params.id
-        }
-    })
-      .then((currencies) =>  {
-        res.json(currencies);
-      });
-    });
+    //     Currency.destroy({
+    //     where: {
+    //          //user_id: req.params.user_id,
+    //          id: req.params.id
+    //     }
+    // })
+    //   .then((currencies) =>  {
+    //     res.json(currencies);
+    //   });
+    // });
     
 
     
