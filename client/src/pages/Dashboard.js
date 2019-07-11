@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
     }
     getCurrencies = (e) => {
         axios
-            .get(`/3001/currencies/currency/${this.state.user_id}`)
+            .get(`/currencies/currency/${this.state.user_id}`)
             .then((res) => {
                 const currency_names = res.data;
                 this.setState({ currency_names });
