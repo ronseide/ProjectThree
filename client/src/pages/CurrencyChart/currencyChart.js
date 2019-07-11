@@ -17,9 +17,9 @@ class CurrencyChart extends React.Component{
     }
 render() {
     return(
-        <div>
-            <h1>{this.props.currency}</h1>
-            <h2>
+        <div className="eachCoin">
+            <h4 className="coinName">{this.props.currency}</h4>
+            <h5 className="coinData">
             {(() => {
         switch (this.props.currency) {
           case "bitcoin":   return "btc";
@@ -34,8 +34,8 @@ render() {
           default:  return "";
         }
             })()}
-            </h2>
-            <h2>{this.state.currencyInfo && "$" + this.state.currencyInfo.priceUsd}</h2>
+            </h5>
+            <h5 className="coinValue">{this.state.currencyInfo && "$" + this.state.currencyInfo.priceUsd}</h5>
             <br></br>
         </div>
     )

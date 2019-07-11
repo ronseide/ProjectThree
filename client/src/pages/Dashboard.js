@@ -10,7 +10,7 @@ class Dashboard extends React.Component {
         user_id: this.props.user.user_id,
         currency_names: [],
         // new_names:""
-        // new_names: [];
+        new_names: []
         // new_names["currency"] = "";
     };
 
@@ -29,11 +29,15 @@ class Dashboard extends React.Component {
 
                 })
             .then((res) => {
+               console.log(this.state.currency_name);
                 console.log(res);
                 console.log("The state of currency_name is")
                 console.log(this.state.currency_name);
                 console.log("The state of currency_names is")
                 console.log(this.state.currency_names)
+                
+             
+           
                 this.setState({new_names:this.state.currency_name})
 
             })
@@ -74,7 +78,7 @@ class Dashboard extends React.Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <h1>CryptoTracker</h1>
-                                    <h2> Hi, {this.props.user.user_name}. <br /> Welcome to your Dashboard.</h2>
+                                    <h2 className="welcomeMess"> Hi, {this.props.user.user_name}. <br /> Welcome to your Dashboard.</h2>
                                 </div>
                             </div>
                             <div className="row">
