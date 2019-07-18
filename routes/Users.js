@@ -70,7 +70,8 @@ users.post("/register", (req, res) => {
                     status: user.email + " registered",
                     user_name: user.first_name,
                     last_name: user.last_name,
-                    email: user.email
+                    email: user.email,
+                    user_id: user.id
                    })
                 })
                 .catch(err => {

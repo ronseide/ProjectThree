@@ -18,6 +18,8 @@ class Dashboard extends React.Component {
         this.getCurrencies()
     }
 
+    handleX(){}
+
 
     handleClick = (e) => {
         axios
@@ -45,13 +47,32 @@ class Dashboard extends React.Component {
                 console.log(err);
             })
     }
+
     getCurrencies = (e) => {
         axios
             .get(`http://localhost:3001/currencies/currency/${this.state.user_id}`)
             .then((res) => {
-                const currency_names = res.data;
+                let currency_names = res.data;
+                console.log(currency_names);
+                currency_names = currency_names.filter(element => element.currency_name != "");
+                console.log(currency_names);
+                for (let i  = 0; i < currency_names.length; i++ ) {
+                    if (currency_names[i].currency_name ){
+
+                    
+                    axios.get(`https://api.coincap.io/v2/assets/${currency_names[i].currency_name}/markets`)
+                    .then((res) => {
+                        const currencyInfo = res.data.data[0];
+                       currency_names[i].info=currencyInfo; 
+                        console.log(currencyInfo);
+                    })
+
+                    console.log(currency_names[i]);
+                }
+                }
+                  
                 this.setState({ currency_names });
-                console.log(res);
+                console.log(this.state.currency_names);
             })
             .catch((err) => console.log(err))
     }
@@ -72,6 +93,19 @@ class Dashboard extends React.Component {
     
     
     render() {
+        if(!this.state.currency_names.length) {
+            return null;
+        }
+
+        let currecies = this.state.currency_names.map((currency) => {
+            return (
+                <CurrencyChart 
+                currency={currency.currency_name}
+                priceUsd={currency}/> 
+                
+                
+            )
+        })
                 return(
             <div className = "container" >
                         <body>
@@ -90,7 +124,7 @@ class Dashboard extends React.Component {
                                     <div className='react-select-container'>
                                         <select onChange={(e) => {
                                             this.updateInput(e)
-                                            this.handleClick(e)
+                                            // this.handleClick(e)
                                             // this.getCurrencies(e)
                                             console.log("On Change fired")
                                         }
@@ -107,7 +141,9 @@ class Dashboard extends React.Component {
                                             <option value="Cardano">Cardano</option>
                                             <option value="EOS">EOS</option>
                                         </select>
+                                        <button className="btn" onClick={(e)  => (this.handleClick(e))}>  Select Currencies </button>
                                     </div>
+
                                 </div>
                                 <div className="col-md-6" id="dashboardList">
                                     <br></br>
@@ -116,7 +152,7 @@ class Dashboard extends React.Component {
                                     <br></br>
                                     <ul>
                                         {this.state.currency_names.map((currency) => {
-                                            return <li>{currency.currency_name} <button type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>
+                                            return (<li>{currency.currency_name} <button onClick={this.handleX} type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>)
                                         })}
                                     </ul>
                                     <li>{this.state.new_names}</li>
@@ -130,8 +166,7 @@ class Dashboard extends React.Component {
                             <div className="row">
 
                             <div className="col-md-12" id="dashboardTracker">
-                                {this.state.currency_names.map((currency) => {
-                                return <CurrencyChart currency={currency.currency_name}/> })}
+                                {currecies}
 
                                 <div className="col-md-12" id="dashboardTracker">
                                     <br></br>

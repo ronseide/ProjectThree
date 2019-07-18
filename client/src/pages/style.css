@@ -92,7 +92,8 @@ h5 {
 #resourcesButton,
 #aboutButton,
 #dashButton,
-#signUpButton {
+#signUpButton,
+#logoutButton {
     color: white;
     border-radius: 25px;
    

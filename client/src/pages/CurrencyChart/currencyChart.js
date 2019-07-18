@@ -7,12 +7,13 @@ class CurrencyChart extends React.Component{
     }
     
     componentDidMount(){
-        axios.get(`https://api.coincap.io/v2/assets/${this.props.currency}/markets`)
-        .then((res) => {
-            const currencyInfo = res.data.data[0];
-            this.setState({ currencyInfo })
-            console.log(currencyInfo);
-        })
+        console.log(this.props.info);
+        // axios.get(`https://api.coincap.io/v2/assets/${this.props.currency}/markets`)
+        // .then((res) => {
+        //     const currencyInfo = res.data.data[0];
+        //     this.setState({ currencyInfo })
+        //     console.log(currencyInfo);
+        // })
 
     }
 render() {
@@ -35,7 +36,7 @@ render() {
         }
             })()}
             </h5>
-            <h5 className="coinValue">{this.state.currencyInfo && "$" + this.state.currencyInfo.priceUsd}</h5>
+            <h5 className="coinValue">{"$" + this.props.priceUsd}</h5>
             <br></br>
         </div>
     )
