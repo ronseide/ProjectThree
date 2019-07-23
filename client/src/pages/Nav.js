@@ -11,7 +11,7 @@ function Nav(props) {
     <div id="nav">
       
       <Link className="btn" to="/" id="brandButton">
-      <img src="./images/lineGraph1.png" width="20px" height="20px"alt="Line Graph" id="lineGraph"></img>&nbsp;CryptoTracker
+      CryptoTracker
       </Link>&nbsp;
       <Link className="btn" to="/resources" id="resourcesButton">
           Resources
