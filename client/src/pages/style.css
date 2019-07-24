@@ -137,13 +137,14 @@ h5 {
 /* footer CSS   */
 footer {
     position: fixed;
+    margin-top: 2000px;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: aquamarine;
     opacity: 0.7;
     color: black;
-    margin-top: 20px;
+    
  
 }
 
@@ -157,9 +158,22 @@ footer {
     text-align: left;
 }
 
+#dashboardList {
+margin-left:  -100px;
+}
+
 .eachCoin {
-    background-color: white;
+  
     margin: 10px;
+    float: left;
+    
+    height: 150px;
+    background-color: #fff;
+
+    box-shadow: 0px 0px 50px 10px #0ff;
+    padding: 20px;
+    margin:  30px;
+    
 }
 
 .coinName {
@@ -172,6 +186,10 @@ footer {
 .coinValue {
     color: black;
     text-align: left;
+}
+
+.coinValue {
+    color: black;
 }
 
 .coinContainer {
@@ -189,3 +207,75 @@ footer {
     border-radius: 50%;
     border: 1px solid red;
 }
+
+.selectCurrencies {
+    color: white;
+    border-radius: 25px;
+   
+    border: 2px solid aquamarine;
+    margin: 50px;
+}
+
+#deleteButton {
+   
+  margin-bottom: 20px;  
+   background-color: hotpink;
+   float: right;
+}
+
+select {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height:  50px;
+    font-family:'Rubik Mono One', sans-serif;
+    margin: 0 auto;
+    align-content: center;
+}
+
+ul
+  {
+    width: 60em;
+    list-style-type: none;
+  }
+
+  li{
+      border: solid 1px white;
+      border-radius: 25px;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 20px;
+      margin: 10px;
+      font-size: 20px;
+      line-height: -5px;
+      
+
+  }
+
+  ul li
+  {
+    float: left;
+    width: 10em;
+  } 
+
+  br
+  {
+    clear: left;
+  }
+
+  div.wrapper
+  {
+    margin-bottom: 1em;
+    margin-right: -25px;
+  }
+
+  .selectBox {
+      margin: 0 auto;
+      margin-left: 300px;
+  }
+
+ h6 {
+      text-align: center;
+      width: 500px;
+      margin: 0 auto;
+  }

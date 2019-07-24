@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import axios from "axios";
 import CurrencyChart from "./CurrencyChart/currencyChart"
+
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +22,22 @@ class Dashboard extends React.Component {
   componentDidMount() {
     this.getCurrencies();
   }
-  handleX() { }
+
+
+  handleX = () => {
+    axios
+    .delete("http://localhost:3001/currencies/currency/delete",
+        {
+            user_id: this.props.user.user_id,
+            currency_name: this.props.currency_name,
+        
+        })
+
+        console.log(this.handleX);  
+}
+
+
+
   handleClick = (e) => {
     axios
       .post("http://localhost:3001/currencies/currency",
@@ -45,6 +61,7 @@ class Dashboard extends React.Component {
         console.log(err);
       })
   }
+
   getCurrencies = () => {
     let promises = [];
     axios
@@ -114,12 +131,13 @@ class Dashboard extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6" id="dashboardDropdown">
+            <div className="col-md-12" id="dashboardDropdown">
               <br></br>
+              <h6>
               To select the crypto-currencies you wish to track, please select items from the below dropdown by clicking on any of them. Your tracked crypto-currencies will appear at right.
-                    <br></br>
+                 </h6>   <br></br>
               <br></br>
-              <div className='react-select-container'>
+              <div className='react-select-container selectBox'>
                 <select onChange={(e) => {
                   this.updateInput(e)
                   // this.handleClick(e)
@@ -139,34 +157,40 @@ class Dashboard extends React.Component {
                   <option value="Cardano">Cardano</option>
                   <option value="EOS">EOS</option>
                 </select>
-                <button className="btn" onClick={(e) => (this.handleClick(e))}>  Select Currencies </button>
+                <button className="btn selectCurrencies" onClick={(e) => (this.handleClick(e))}>  Select Currencies </button>
               </div>
             </div>
-            <div className="col-md-6" id="dashboardList">
+            <div>
+            <div className="col-md-12" id="dashboardList">
               <br></br>
+              <h6>
               To remove a crypto-currency from tracking, simply click the "X" beside the item.
-                        <br></br>
+                   </h6>     <br></br>
               <br></br>
-              <ul>
+              </div>
+
+<div className="wrapper">
+
+              <ul >
                 {this.state.currency_names.map((currency, i) => {
                   return (<li key={i}>{currency.currency_name} <button onClick={this.handleX} type="button" className="btn btn-link btn-sm" id="deleteButton">X</button></li>)
                 })}
               </ul>
-              {/* <li>{this.state.new_names}</li> */}
-              <ul>
-                {/* {this.state.new_names.map((currency) => {
-                                            return <li>{currency} <button type="button" class="btn btn-link btn-sm" id="deleteButton">X</button></li>
-                                        })} */}
-              </ul>
+              <br></br>
+
+  </div>
+
+              
+              
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12" id="dashboardTracker">
+          <div className="container">
+          
+            <div id="dashboardTracker">
               {currecies}
-              <div className="col-md-12" id="dashboardTracker">
-                <br></br>
-              </div>
-            </div>
+             
+            
+          </div>
           </div>
         </body>
       </div>

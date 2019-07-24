@@ -113,7 +113,21 @@ users.post("/login", (req, res) => {
     .catch(err => {
         res.status(400).json({ error: err})
     });
+
+
+    Users.post(("/signout"((req, res) => {
+        if (req.user) {
+            req.signout();
+            res.send("logging out");
+        } else {
+            console.log("already signed out")
+            res.send("no user to sign out!");
+        }
+    }) 
+    ))
 });
   
+
+
 
 module.exports = users;
