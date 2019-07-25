@@ -16,8 +16,11 @@ class App extends Component {
     user: null
   }
 
+  
   setUser = (user) => this.setState({ user });
-
+  
+  logoutUser = (user) => this.setState ({ user:null });
+  
   render() {
     return (
 <Router>
@@ -25,6 +28,7 @@ class App extends Component {
     <Nav 
       setUser={this.setUser}
       user={this.state.user}
+      logoutUser={this.logoutUser}
       />
     <Switch>
     <Route exact path="/" component={Home} />

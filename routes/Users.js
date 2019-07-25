@@ -115,16 +115,16 @@ users.post("/login", (req, res) => {
     });
 
 
-    Users.post(("/signout"((req, res) => {
-        if (req.user) {
-            req.signout();
-            res.send("logging out");
-        } else {
-            console.log("already signed out")
-            res.send("no user to sign out!");
-        }
-    }) 
-    ))
+    // Users.post(("/signout"((req, res) => {
+    //     if (req.user) {
+    //         req.signout();
+    //         res.send("logging out");
+    //     } else {
+    //         console.log("already signed out")
+    //         res.send("no user to sign out!");
+    //     }
+    // }) 
+    // ))
 });
   
 

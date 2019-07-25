@@ -10,16 +10,6 @@ import Login from "./Login/Login";
 
 function Nav(props) {
 
-    // handleLogout = (e) => {
-    //     axios
-    //     .delete("http://localhost:3001/signout",
-    //         {
-    //             email: this.state.email,
-    //             password: this.state.password
-            
-    //         })
-    
-    //         console.log(handleLogout);  
     
   return (
     <div>
@@ -43,7 +33,7 @@ function Nav(props) {
       <Link className="btn" to="" id="loginButton" data-toggle="modal" data-target="#modalLoginForm" id="loginButton" hidden={props.user} user={props.user}>
           Login
       </Link>&nbsp;
-      <Link className="btn" to=""  id="logoutButton" hidden={!props.user} user={props.user}>
+      <Link className="btn" to="" onClick={props.logoutUser} id="logoutButton" hidden={!props.user} user={props.user}>
           Logout
       </Link>&nbsp;
 
@@ -62,5 +52,6 @@ function Nav(props) {
 
 </div>
   )}
+
 
 export default Nav;

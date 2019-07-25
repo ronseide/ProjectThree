@@ -163,7 +163,7 @@ class Dashboard extends React.Component {
             <div>
             <div className="col-md-12" id="dashboardList">
               <br></br>
-              <h6>
+              <h6 className="deleteinstructions">
               To remove a crypto-currency from tracking, simply click the "X" beside the item.
                    </h6>     <br></br>
               <br></br>
